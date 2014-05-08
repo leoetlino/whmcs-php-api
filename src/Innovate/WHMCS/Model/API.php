@@ -64,6 +64,7 @@ class API {
             'http' => array(
                 'method' => 'POST',
                 'content' => http_build_query($data),
+                'header' =>  "Content-Type: application/x-www-form-urlencoded\r\n",
             )
         );
 
