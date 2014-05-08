@@ -70,7 +70,7 @@ class API {
         $context = stream_context_create($options);
         $result = json_decode(file_get_contents($this->getUrl(), false, $context), true);
         
-        return ($result['result'] === 'success') ? $result : false;
+        return $result;
     }
     
     /* Getters */
